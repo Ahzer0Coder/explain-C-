@@ -10,13 +10,14 @@
         {
             int []arr =  new int [1] ;
             arr [0] = 15 ;
-            func1(arr) ;
-            func2(arr) ;
-            func3(arr) ;
+            func1(arr) ;  //  O{1}
+            func2(arr) ; // O{n}
+            func3(arr) ; // O{n^2}
             
         }
         static int func1(int []a )
         {
+            // big O 
             //constant
             return a[0]+1 ;
         }
