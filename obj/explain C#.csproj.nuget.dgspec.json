@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj": {}
+    "d:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj": {}
   },
   "projects": {
-    "D:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj": {
+    "d:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj",
+        "projectUniqueName": "d:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj",
         "projectName": "explain C#",
-        "projectPath": "D:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj",
+        "projectPath": "d:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj",
         "packagesPath": "C:\\Users\\Ahmed-shelbaya\\.nuget\\packages\\",
-        "outputPath": "D:\\ahmed\\university\\Data structers\\explain C#\\obj\\",
+        "outputPath": "d:\\ahmed\\university\\Data structers\\explain C#\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ahmed-shelbaya\\AppData\\Roaming\\NuGet\\NuGet.Config",
