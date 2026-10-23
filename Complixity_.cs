@@ -72,6 +72,10 @@ namespace explain_C_
             {
                  Console.WriteLine("{0}", i); // Big (O) = 1 
             }
+            for(int  i = 0 ; i < arr.Length ; i++)
+            {
+                Console.WriteLine("{0}", arr[i]);  // big(O) = n  to read or write
+            }
             for(int i = 0 ; i < 5; i++)  // constant loop in for
             {
                 for(int j = 0  ;j <  5 ; j++)  // constant loop in for 

@@ -1,4 +1,5 @@
-﻿using explain_C_;
+﻿using System.Collections;
+using explain_C_;
 using him; 
 
 namespace pro
@@ -11,13 +12,14 @@ namespace pro
 
         static void Main()
         {
-            int []arr =  new int [1] ;
-            arr [0] = 15 ;
-            func1(arr) ;  //  O{1}
-            func2(arr) ; // O{n}
-            func3(arr) ; // O{n^2}
-             Complixity_.Ques();
-             BinarySearch.Binary(); 
+            // int []arr =  new int [1] ;
+            // arr [0] = 15 ;
+            // func1(arr) ;  //  O{1}
+            // func2(arr) ; // O{n}
+            // func3(arr) ; // O{n^2}
+            // Complixity_.Ques();
+            // BinarySearch.Binary(); 
+           _Arraylist aa1  = new _Arraylist(100); 
 
 
         }
