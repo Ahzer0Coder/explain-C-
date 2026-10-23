@@ -25,6 +25,42 @@ namespace explain_C_
             _length =  0 ; 
             arr =  new object[10]; 
            }
+
+           public void _insert(int index , object val)
+           {
+              if (Isfull())
+              {
+                System.Console.WriteLine("Array list if Full ");
+                
+              }
+              if (index > 0 && index < _length )
+              {
+                System.Console.WriteLine("index out of range ");
+              }
+               
+             for(int i = _length ; i > index ; i--)
+             {
+                arr[i] = arr[i-1];
+
+             }
+             arr[index] = val ; 
+             _length++;
+           }
+           public void RemoveAT (int index)
+           {
+             for(int i= 0 ; i < _length ; i++)
+            {
+                arr[i] = arr[i+1];
+               
+            }
+             _length-- ;
+            
+           }
+
+
+
+
+
            public int _Lenght {get => _length ;  private set => _Lenght = value; }
 
            public bool Isfull()
