@@ -20,7 +20,13 @@ namespace pro
             // Complixity_.Ques();
             // BinarySearch.Binary(); 
            _Arraylist aa1  = new _Arraylist(100); 
-
+           aa1 [0] =  20  ;
+           System.Console.WriteLine(aa1[0]);
+           aa1 [1] ="Ahmed" ;
+           System.Console.WriteLine(aa1[1]);
+           aa1 [0] = 5  ;
+           System.Console.WriteLine(aa1[0]);
+ 
 
         }
         static int func1(int[] a)

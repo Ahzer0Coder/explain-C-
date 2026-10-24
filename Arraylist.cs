@@ -13,6 +13,19 @@ namespace explain_C_
     object[] arr;
     int _Max_size;
     int _length;
+
+    public object this[int index]
+    {
+      get
+      {
+        return (object)this.arr[index];
+      }
+      set
+      {
+        this.arr[index] = value ;
+      }
+    }
+
     public _Arraylist(int size)
     {
       _Max_size = size;
@@ -33,9 +46,10 @@ namespace explain_C_
         System.Console.WriteLine("Array list if Full ");
 
       }
-      if (index > 0 && index < _length)
+      if (index > 0 || index < _length)
       {
         System.Console.WriteLine("index out of range ");
+        return;
       }
 
       for (int i = _length; i > index; i--)
@@ -104,16 +118,17 @@ namespace explain_C_
     }
     public void remove(object vall)
     {
-      int index =  this.indexof(vall);
-      for(int i = 0 ;i <  _length; i++)
+      int index = this.indexof(vall);
+      for (int i = 0; i < _length; i++)
       {
-        arr[i] = arr[i+1];
-      }_length-- ; 
-      
+        arr[i] = arr[i + 1];
+      }
+      _length--;
+
     }
 
 
 
-    
+
   }
 }
