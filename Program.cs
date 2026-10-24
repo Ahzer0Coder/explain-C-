@@ -27,6 +27,7 @@ namespace pro
             // System.Console.WriteLine(aa1[0]);
             // var node2 = new MNode<object>(2);
             // var node1 = new MNode<object>("ALi", node2);
+            
             MNode<object> aa1 = new MNode<object>(null);  // data you enter it in not have any value 
             aa1.AddFrist(5);
             aa1.AddFrist(10);
@@ -35,7 +36,7 @@ namespace pro
             Console.WriteLine(aa1.size());
             System.Console.WriteLine(aa1._GetLast());
             System.Console.WriteLine(aa1._GetFrist());
-            
+
             // aa1._Clear();
             // System.Console.WriteLine(aa1._GetFrist());
 
