@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "d:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj": {}
+    "D:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj": {}
   },
   "projects": {
-    "d:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj": {
+    "D:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "d:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj",
+        "projectUniqueName": "D:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj",
         "projectName": "explain C#",
-        "projectPath": "d:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj",
+        "projectPath": "D:\\ahmed\\university\\Data structers\\explain C#\\explain C#.csproj",
         "packagesPath": "C:\\Users\\Ahmed-shelbaya\\.nuget\\packages\\",
-        "outputPath": "d:\\ahmed\\university\\Data structers\\explain C#\\obj\\",
+        "outputPath": "D:\\ahmed\\university\\Data structers\\explain C#\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Ahmed-shelbaya\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -63,7 +63,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.402/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.403/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

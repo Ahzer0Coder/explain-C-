@@ -7,21 +7,34 @@ using System.Threading.Tasks;
 // etertion to insert new element in linked list  =  travarse 
 // in array  =  etration 
 
-namespace explain_C_
+namespace explain_C_1
 {
 
-    
+
 
     public class MNode<T>
     {
-        MNode<T> head;
+         MNode<T> head;
+        public MNode(T Data, MNode<T> next = null)
+        {
+            this.Data = Data;
+            this.next = next;
+        }
+
+        public T Data { get; set; }
+        public MNode<T> next { get; set; }
+
+
         public void AddFrist(T data)
         {
             this.head = new MNode<T>(data, this.head);
+            
         }
+
         public void travers()
         {
             var temp = this.head;
+           
             while (temp != null)
             {
                 System.Console.WriteLine(temp.Data);
@@ -29,13 +42,6 @@ namespace explain_C_
             }
         }
 
-        public MNode(T Data, MNode<T> next = null)
-        {
-            this.Data = Data;
-            this.next = next;
-        }
-        public T Data { get; set; }
-        public MNode<T> next { get; set; }
         public int size()
         {
             int counter = 0;
@@ -47,10 +53,12 @@ namespace explain_C_
             }
             return counter;
         }
+
         public T _GetFrist()
         {
             return this.head.Data;
         }
+
         public MNode<T> _GetLast()
         {
             if (this.head == null) return null;
@@ -65,10 +73,12 @@ namespace explain_C_
             }
             return temp;
         }
+
         public void _Clear()
         {
             this.head = null;
         }
+            // this is  iam not remerber it ; 
         public void Add(T Data)
         {
             var _Lastnode = _GetLast();
@@ -80,6 +90,15 @@ namespace explain_C_
             {
                 _Lastnode.next = new MNode<T>(Data);
             }
+        }
+
+        public void _DeleteElement()
+        {
+
+        }
+        public void _reverse()
+        {
+            
         }
 
 
