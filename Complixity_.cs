@@ -30,7 +30,7 @@ namespace explain_C_
             while (b <= num)
             {
                 b = b * 2;  // if b = 0 you enter infinity loop big(O) = infinity  (fire) 
-                System.Console.WriteLine(b);  // big(O) =  log n
+                System.Console.WriteLine(b);  // big(O) =  log n  
 
             }
             for (int i = 0; i < 5; i++)
@@ -39,6 +39,15 @@ namespace explain_C_
                 {
                     System.Console.WriteLine("{0}", n);  // big(O) = 1 
                     n++;
+                }
+            }
+            for (int i = 0; i < 5; i++)
+            {
+                for (int j = 0; j < 10; j++)
+                {
+                    b += 10;
+                    System.Console.WriteLine("{0}", b); //big(o) = 1
+
                 }
             }
             for (int i = 0; i < 3; i++)

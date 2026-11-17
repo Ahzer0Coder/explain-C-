@@ -10,11 +10,9 @@ using System.Threading.Tasks;
 namespace explain_C_1
 {
 
-
-
     public class MNode<T>
     {
-         MNode<T> head;
+        MNode<T> head;
         public MNode(T Data, MNode<T> next = null)
         {
             this.Data = Data;
@@ -28,13 +26,13 @@ namespace explain_C_1
         public void AddFrist(T data)
         {
             this.head = new MNode<T>(data, this.head);
-            
+
         }
 
         public void travers()
         {
             var temp = this.head;
-           
+
             while (temp != null)
             {
                 System.Console.WriteLine(temp.Data);
@@ -78,7 +76,7 @@ namespace explain_C_1
         {
             this.head = null;
         }
-            // this is  iam not remerber it ; 
+        // this is  iam not remerber it ; 
         public void Add(T Data)
         {
             var _Lastnode = _GetLast();
@@ -91,6 +89,73 @@ namespace explain_C_1
                 _Lastnode.next = new MNode<T>(Data);
             }
         }
+        public void _removeFrist()
+        {
+            if (head == null)
+            {
+                System.Console.WriteLine("empty list");
+                return;
+            }
+            head = head.next;
+        }
+        public void _removelast()
+        {
+            if (head == null)
+            {
+                System.Console.WriteLine("The list empty");
+                return;
+            }
+            if (head.next == null)
+            {
+                head = null;
+                return;
+
+            }
+            MNode<T> temp = head;
+
+            while (temp.next.next != null)
+            {
+
+                temp = temp.next;
+            }
+            temp.next = null;
+        }
+        public MNode<T> _GetAt(int num)
+        {
+            if (head == null)
+            {
+                return null;
+            }
+            var temp = head;
+            int counter = 0;
+            while (temp != null)
+            {
+                if (counter == num)
+                {
+                    return temp;
+                }
+                temp = temp.next;
+                counter++;
+            }
+            return null;
+        }
+        public void _RemoveAt(int num)
+        {
+            if (head == null)
+            {
+                return;
+            }
+            if (num == 0)
+            {
+                _removeFrist();
+            }
+            var previous = _GetAt(num - 1);
+            if (previous == null || previous.next == null)
+            {
+                return; 
+            }
+            previous.next = previous.next.next;
+        }
 
         public void _DeleteElement()
         {
@@ -98,7 +163,7 @@ namespace explain_C_1
         }
         public void _reverse()
         {
-            
+
         }
 
 

@@ -1,5 +1,6 @@
 ﻿using System.Collections;
 using explain_C_;
+using explain_C_1;
 using him;
 
 namespace pro
@@ -39,10 +40,15 @@ namespace pro
 
             // aa1._Clear();
             // System.Console.WriteLine(aa1._GetFrist());
-            
+            MNode<object> newnode = new MNode<object>(20);
+            newnode.AddFrist(20);
+            newnode.AddFrist(50);
+            newnode.AddFrist(100);
+            // newnode.travers();
+            // newnode._removelast();
+            // newnode.travers();
+            System.Console.WriteLine(newnode._GetAt(0).Data);
 
-
- 
 
 
 
