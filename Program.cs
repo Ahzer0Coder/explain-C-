@@ -1,4 +1,7 @@
 ﻿using System.Collections;
+using System.Collections.Generic;
+using System.Security.Cryptography.X509Certificates;
+using System.Xml;
 using explain_C_;
 using explain_C_1;
 using him;
@@ -40,19 +43,28 @@ namespace pro
 
             // aa1._Clear();
             // System.Console.WriteLine(aa1._GetFrist());
-            MNode<object> newnode = new MNode<object>(20);
-            newnode.AddFrist(20);
-            newnode.AddFrist(50);
-            newnode.AddFrist(100);
-            // newnode.travers();
-            // newnode._removelast();
-            // newnode.travers();
-            System.Console.WriteLine(newnode._GetAt(0).Data);
+            // MNode<object> newnode = new MNode<object>(20);
+            // newnode.AddFrist(20);
+            // newnode.AddFrist(50);
+            // newnode.AddFrist(100);
+            // // newnode.travers();
+            // // newnode._removelast();
+            // // newnode.travers();
+            // System.Console.WriteLine(newnode._GetAt(0).Data);
 
-
+            // Queue<string> q1 = new();
+            // q1.Enqueue("A"); q1.Enqueue("B"); q1.Enqueue("C");
+            // System.Console.WriteLine(q1.Peek());
+            // System.Console.WriteLine(q1.Dequeue());
+            // q1.Enqueue("D");
+            // while (q1.Count > 0)
+            // {
+            //     System.Console.WriteLine(q1.Dequeue());
+            // }
 
 
         }
+
         static int func1(int[] a)
         {
             // big O 
@@ -84,6 +96,34 @@ namespace pro
             }
         }
     }
+
+    // public class Node<T>
+    // {
+    //     public T Data;
+    //     public Node<T>? Next;
+
+    //     public Node(T data)
+    //     {
+    //         Data = data;
+    //         Next = null;
+    //     }
+    // }
+
+    // public class linkedqueue<T>
+    // {
+    //     public Node<T>? front, raer;
+    //     public int count { get; set; }
+    //     public bool Isempity() => front == null;
+    //     public void Enqueue(T item)
+    //     {
+    //         var node = new Node<T>(item);
+    //         if (raer == null) front = raer = node;
+    //         else { raer.Next = node; raer = node; }
+    //         count++;
+    //     }
+
+    // }
+
 }
 
 // time complixity 
